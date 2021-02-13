@@ -514,7 +514,7 @@ scroll-behavior: smooth;
     border-right: 1px solid lightgrey;
     display: flex;
     justify-content: center;
-    overflow: scroll;
+    overflow: visible;
     margin-left:auto;
     margin-right:auto;
     width: 30px;
@@ -563,7 +563,6 @@ scroll-behavior: smooth;
     background: #A3A7CE;
     position: relative;
 }
-
 
 /*Full Page Scroll Dots*/
 
