@@ -14,7 +14,7 @@ $(document).ready(function () {
     })(jQuery);
   
     // input text for typing animation
-    $("#holder").writeText("WEB DESIGNER + FRONT-END DEVELOPER");
+    $("#holder").writeText("Web Designer + Front-End Developer");
   
     // initialize wow.js
     new WOW().init();
@@ -122,22 +122,7 @@ $(document).ready(function () {
     });
 
   
-    // fullpage.js link navigation
-   $(document).on("click", "#skills", function () {
-      $.fn.fullpage.moveTo(3);
-    });
-  
-    $(document).on("click", "#projects", function () {
-      $.fn.fullpage.moveTo(4);
- });
-  
-    $(document).on("click", "#about", function () {
-      $.fn.fullpage.moveTo(2);
-    });
 
-   $(document).on("click", "#home", function () {
-      $.fn.fullpage.moveTo(1);
-    });
   
 
   
@@ -265,3 +250,20 @@ $('.nav-toggle').on('click', function() {
   return false;
 });
 
+
+//Images
+var images = [];
+function preload() {
+    for (var i = 0; i < arguments.length; i++) {
+        images[i] = new Image();
+        images[i].src = preload.arguments[i];
+    }
+}
+
+//-- usage --//
+preload(
+    "images/current-portfolio.png",
+    "images/me-pixel.png",
+    "images/dream-cream.png",
+    "images/calculator.png"
+)
