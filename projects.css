@@ -33,6 +33,10 @@ h3{
   color: #524943;
 }
 
+p{
+  font-size: 13px;
+}
+
 
 .thumbnail{
   height: 400px;
@@ -163,6 +167,7 @@ border: 2px solid #998578;
   background-color: white;
   z-index: 5;
   table-layout: fixed;
+  top: 60px;
 
 	}
 
@@ -201,6 +206,7 @@ td, th {
 
   .links li a:hover{
     color: white;
+
   }
 
 
@@ -279,8 +285,9 @@ ul li {
   text-decoration:none;
   font-family:fontawesome;
   position: relative;
+  font-size: 25px;
   display: inline-block;
-  padding-top:7px;
+  padding-top:10px;
   margin:0 2px;
   border-radius: 50%;
   background: #A3A7CE;
@@ -366,7 +373,7 @@ a:hover span {
 /*Button*/
 
 .container{
-  top: 30px;
+  top: 100px;
   margin: 0 auto;
   width: 100%;
   position: relative;
