@@ -1,308 +1,615 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no">
+  <head>
+    <!--Page Settings-->
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#3100FF" />
     <title>Sarah Tran</title>
-    <!--Styles-->
-    <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-<!--Hover-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"> 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-  <link rel="icon" href="images/logo.svg">
-  <!--Fonts-->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
-
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-
-  
-        <!-- navbar header -->
-        
-    <header id="header">
-
-      <div class="navi-wrap" > 
-        <!--     <nav>
-      <ul id="myMenu">
-                <li ><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li ><a href="#">Skills</a></li>
-                <li ><a href="#">Projects</a></li>
-      </ul>
-        </nav>
-
-          <a class="nav-toggle" href="#">Menu<span class="small">&#x25BC;</span></a>
-       
+    <meta name="robots" content="follow" />
+    <meta
+      name="google-site-verification"
+      content="-whaNYRhZtZi8PJDzCLH8g4C0Hc_ihpr0rfvzF8GmHI"
+    />
+    <meta
+      name="keywords"
+      content="Sarah, Sarah Tran, Web Design"
+    />
+    <meta
+      name="Description"
+      content="This is Sarah Tran's portfolio."
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="src/sarah-tran.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="src/sarah-tran.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="src/sarah-tran.png"
+    />
+    <link rel="manifest" href="src/site.webmanifest" />
+    <link rel="mask-icon" href="src/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="src/logo.svg" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="msapplication-config" content="src/browserconfig.xml" />
+    <!--All Styles-->
+    <link rel="stylesheet" href="css/loading.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!--Fonts-->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!--No-Script Styles-->
+    <noscript>
+      <style>
+        section#loading,
+        #homeSection .scroll-hint,
+        #circleLeft,
+        #circleRight {
+          display: none;
+        }
+      </style>
+    </noscript>
  
--->
-    
-          <div div = "social" class="mf-social-side-list">
-            <ul>
-            <li>
-            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"><span><b>Facebook</b></span></i></a>
-            </li>
-            <li>
-            <a href="https://www.behance.net/sarahtran1" target="_blank"><i class="fab fa-behance"><span><b>Behance</b></span></i></a>
-            </li>
-            <li>
-            <a href="https://codepen.io/" target="_blank"><i class="fab fa-codepen"><span><b>Codepen</b></span></i></a>
-            </li>
-            <li>
-            <a href="https://github.com/SaraahTran" target="_blank"><i class="fab fa-github"><span><b>Github</b></span></i></a>
-            </li>
-            <li>
-            <a href="mailto:stsarahtran@gmail.com" target="_blank"><i class="far fa-envelope"><span><b>Email</b></span></i></a>
-            </li>
+    <!--Loading Script-->
+    <script src="scripts/loading.js"></script>
+
+    <!--Menu-->
+<header>
+
+  <img src="src/sarah-tran.png" class="logo">
+    <nav>
+      <ul id="myMenu">
+                <li ><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li ><a href="#skills">Skills</a></li>
+                <li ><a href="#projects">Projects</a></li>
+      </ul>
+   </nav>
+
+<a class="nav-toggle" href="#">Menu<span class="small">&#x25BC;</span></a>
+
+
+
+<div class="mf-social-side-list">
+  <ul>
+  <li>
+   <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"><span><b>Facebook</b></span></i></a>
+  </li>
+
+  <li>
+  <a href="https://www.behance.net/sarahtran1" target="_blank"><i class="fab fa-behance"><span><b>Behance</b></span></i></a>
+   </li>
             
-            </ul>
-            </div>
-            
-        </div>
-        
-      </header>
-        
-      
-
-        <!-- end navbar header -->
-      
-        <!-- begin fullpage -->
-
-        <div class="wrap">
-            <div id="wrap">
-          
-        <div id="fullpage">
-
-            
-      
-          <!-- begin section -->
-          <section>
-
-          <div id="home" class="section first" data-anchor="first">
-
-              <div class="home-container">
-
-                <div class="home-text">
-            <div class="opaque-bg animated fadeInDown">
-
-                <h1 class="animate__animated animate__slideInDown">
-                    <span class="dark-font">Sarah</span>
-                    <span class="light-font">Tran</span>
-            </h1>
-            <div class="banner"><img src="images/banner.png" height="20" alt=""></div><br><br>
-              <p><span id="holder"></span><span class="blinking-cursor">|</span></p>
-            </div>
-
-</div>
-
-<img class="home-image" src="images/me-pixel.png">
-
-<div class="box">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
-          </div></div>
-
-          </section>
-          <!-- end section -->
-      
-          <!-- begin section -->
-          <section>
-          
-          <div id="about" class="section" data-anchor="second">
-            <div class="content"><div class="container-wrapper">
-
-
-                <h1 class="animate__animated animate__slideInDown">
-                    <span class="dark-font">About</span>
-                    <span class="light-font">Me</span>
-            </h1>
-
-            <div class="banner"><img src="images/banner.png" height="20" alt=""></div><br><br>
-            <p>I am from Melbourne, Australia and I am currently a student at Monash University studying a Bachelors of Commerce and Information Technology. I am majoring in marketing and software development with a heavy focus on digital marketing and web development.</p>
-
-            </div></div>
-          </div>
-          <!-- end section -->
-
-                 <!-- begin section -->
-
-                 <section id="skills">
-           
-                  
-                  <div class="section" data-anchor="third">
-                    <div class="content"><div class="container-wrapper">
-        
-        
-                        <h1 class="animate__animated animate__slideInDown">
-                            <span class="dark-font">My</span>
-                            <span class="light-font">Skills</span>
-                    </h1>
-        
-                    <div class="banner"><img src="images/banner.png" height="20" alt=""></div><br><br>
-
-                    <div class="container-skills">
-                        <h2>Development</h2>
-					<div class="html">
-					<p class="bar-title">
-						HTML / HTML5 & CSS
-						<span class="percent align-right">80%</span>
-					</p>
-					<div class="bar">
-						<div class="bar-fill bar-fill-html start"></div>
-					</div>
-					</div>
-					<div class="javascript">
-						<p class="bar-title">
-							Javascript
-							<span class="percent align-right">60%</span>
-						</p>
-						<div class="bar">
-							<div class="bar-fill bar-fill-javascript start"></div>
-						</div>
-                    </div>
-                    
-                    <div class="wordpress">
-						<p class="bar-title">
-							Wordpress
-							<span class="percent align-right">70%</span>
-						</p>
-						<div class="bar">
-							<div class="bar-fill bar-fill-wordpress start"></div>
-						</div>
-					</div>
-                    
-                    
-                    <h2>Design</h2>
-
-                    <div class="figma">
-						<p class="bar-title">
-							Figma
-							<span class="percent align-right">80%</span>
-						</p>
-						<div class="bar">
-						<div class="bar-fill bar-fill-figma start"></div>
-						</div>
-		
-                
-					<div class="photoshop">
-						<p class="bar-title">
-							Adobe Suite (Photoshop, Illustrator, XD)
-							<span class="percent align-right">60%</span>
-						</p>
-						<div class="bar">
-						<div class="bar-fill bar-fill-photoshop start"></div>
-						</div>
-					</div>
-			
-                   
-
-
-
-
-</div>
-                    </div></div>
-                  </section>
-                  <!-- end section -->
-      
-          <!-- begin section -->
-          <section id="projects">
-
-            <div class="section" data-anchor="fourth">
-            <div class="content-slide">
-
-
-              <div class="slide"> <div class="slide-wrapper">
-
-                <h1 class="animate__animated animate__slideInDown">
-                    <span class="dark-font">My</span>
-                    <span class="light-font">Projects</span>
-            </h1>
-            <div class="banner"><img src="images/banner.png" height="20" alt=""></div><br><br>
-
-                <p>Take a look at this slideshow of my projects. 
-                  <br><br>
-                  <highlight>Click the arrow buttons below!</highlight></p>
-                </div>
-
-              <div class="slide"> <div class="slide-wrapper">
-                
-                <h2>PORTFOLIO</h2>
-                <p>My personal portfolio website.</p>
-                <img class="thumbnail" data-src="images/current-portfolio.png">
-          
-                <div class="btn">
-                  <a href="current-portfolio.html">View Project</a>
-                  </div>
-
-            </div></div>
+   <li>
+  <a href="https://codepen.io/" target="_blank"><i class="fab fa-codepen"><span><b>Codepen</b></span></i></a>
+  </li>
   
+  <li>
+  <a href="https://github.com/SaraahTran" target="_blank"><i class="fab fa-github"><span><b>Github</b></span></i></a>
+  </li>
+  
+  <li>
+  <a href="mailto:stsarahtran@gmail.com" target="_blank"><i class="far fa-envelope"><span><b>Email</b></span></i></a>
+  </li>
+            
+ </ul>
+</div>
+</div>
 
-              <div class="slide"><div class="slide-wrapper">
-                
-                <h2>ICE CREAM SHOP</h2>
-                <p>Mockup of an ice cream shop.</p>
-                <img class="thumbnail" data-src="images/dream-cream.png">
-          
-                <div class="btn">
-                  <a href="ice-cream.html">View Project</a>
-                  </div>
-            </div></div>
-
-            <div class="slide"><div class="slide-wrapper">
-                
-              <h2>CALCULATOR</h2>
-              <p>A simple calculator.</p>
-              <img class="thumbnail" data-src="images/calculator.png">
         
-              <div class="btn">
-                <a href="https://sarahtran-calculator.netlify.app/">View Project</a>
-                </div>
-          </div></div>
+<!-- end navbar header -->
+    <div id="menuElements">
+     
+      <div id="circleLeft"></div>
+      <div id="circleRight"></div>
+      <div class="navigation-menu">
+        <img
+          class="close-fullscreen"
+          src="src/close.svg"
+          alt="Close Navigation"
+        />
+        <ul>
+          <li><a class="page-link" href="#home">Home</a></li>
+          <li><a class="page-link" href="#about">About</a></li>
+          <li><a class="page-link" href="#work">Work</a></li>
+          <li><a class="page-link" href="#skills">Skills</a></li>
+        </ul>
+      </div>
+  
+    </div>
+
+</header>
+    <!--Fixed-->
+    <hr class="vline" />
+
+    <!--Fullpage Content-->
+    <div id="fullpage">
+  <!-- Home Section -->
+      <div class="section" id="homeSection">
+
+        <div class="left-col">
+        <h1><span class="dark">Sarah </span>
+          <span class="light">Tran</span></h1>
 
 
-            </div>
-          </div></div>
-          </div>
+
+
+        <div id="typed-strings">
+          <p>I design and develop websites.</p>
+          <p>I design graphics.</p>
         </div>
-      </section>
-          <!-- end section -->
+        <p>
+          <span id="typed"></span>
+        </p>
+
+                 
+        <div class="btn">
+          <a href="#projects"><span>View Projects</span></a>
+        </div>
+
+        </div>
+
+        <div class="right-col">
+<img class = "right-image" src="src/self-portrait-no-glasses.png">
+
+        </div>
+       
+        <div class="box">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+       
+      </div>
+      <!-- About Section -->
+      <div class="section" id="aboutSection">
+
+        <div class="page-container">
+        <div class="left-col">
+
+          <h1><span class="dark">About</span>
+            <span class="light">Me</span></h1>
+
+
+
+        <p>
+          <p>I am from <highlight>Melbourne, Australia</highlight> and I am currently a student at Monash University studying a <highlight>Bachelors of Commerce and Information Technology.</highlight> I am majoring in marketing and software development. In my spare time, I enjoy drawing, design, fashion,reading, writing and basically anything creative. I also love browsing the web and playing games. The reason why I <highlight>love design and web development</highlight> is because it combines my passion and interests for both <highlight>art and tech</highlight>.</p>
+        
+        </p>
+
+        </div>
+
+        <div class="right-col">
+          <img class = "right-image2" src="src/about-me.png">
+          
+                  </div>
+                 
+
+
+        
+      </div>
+      </div>
+
+ <!-- About Section -->
+ <div class="section" id="skillsSection">
+
+  <div class="page-container">
+  <div class="left-col">
+    <h1><span class="dark">My</span>
+      <span class="light">Skills</span></h1>
+
+
+
+      <p>I have a <highlight>broad range</highlight> of experiences across product design, visual design, brand design, UX/UI design and web design/development. I am <highlight>always excited</highlight> to learn new programs and add more skills. 
+      </p>
+      <div class="row">
+
+        <div class="column">
+
+          <div class="tile">
+            <img src = "src/graphic-design.png" class="icon">
+          <h3>Design</h3>
+          <p class="desc">I can design websites, brand identities, logos and more.</p>
+          <ul class="tools">
+            <li>
+                <img src="src/adobe-illustrator.png" class="tool">
+             </li>
+                            
+             <li>
+                 <img src="src/adobe-indesign.png" class="tool">
+              </li>
+            
+              <li>
+                   <img src="src/adobe-xd.png" class="tool">    
+                </li>
+            
+              <li>
+                   <img src="src/figma.png" class="tool">  
+                </li>
+            
+                <li>  <img src="src/sketch.png" class="tool">
+                  </li>
+                </ul>            
+        
+              <a href="design.html" class="skills-button">
+
+                  Read More ➝
+  
+              </a>
+       
+        </div>
+
+        </div>
+
+        
+
+
+            <div class="column">
+
+          <div class="tile">
+            <img src = "src/web-development.png" class="icon">
+          <h3>Development</h3>
+          <p class="desc">I do frontend and am always practising coding and developing.</p>
       
+          <ul class="tools">
+            <li>
+                <img src="src/html.png" class="tool">
+             </li>
+                            
+             <li>
+                 <img src="src/css.png" class="tool">
+              </li>
+            
+              <li>
+                   <img src="src/javascript.png" class="tool">    
+                </li>
+            
+              <li>
+                   <img src="src/wordpress.png" class="tool">  
+                </li>
+            
+                <li>  <img src="src/react.png" class="tool">
+                  </li>
+                </ul>            
+        
+              <a href="development.html" class="skills-button">
 
-      </body>
-
-
-<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-
-<script src="https://cdn.jsdelivr.net/gh/fabeat/responsive-fullpage-scroll@v1.0.3/dist/fullpage-scroll.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"></script>
-
-<script> $(document).ready(function() { $('#fullpage').fullpage(); });</script>
-    <script src="app.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollmonitor/1.2.4/scrollMonitor.js"></script>
-
-
-<script>
-    var myFullpage = new fullpage('#fullpage', {
-        anchors: ['first', 'second', 'third', 'fourth'],
-        menu: '#myMenu',
-        css3: true,
+                  Read More ➝
+  
+              </a>
        
 
-      });
-    </script>
+
+        </div>
+        </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="column">
+
+            <div class="tile">
+              <img src = "src/illustration.png" class="icon">
+         
+            <h3>Illustrations</h3>
+          <p class="desc">I love drawing and it is what I feel most comfortable with.</p>
+
+          <ul class="tools">
+            <li>
+                <img src="src/adobe-illustrator.png" class="tool">
+             </li>
+                            
+             <li>
+                 <img src="src/adobe-photoshop.png" class="tool">
+              </li>
+            
+              <li>
+                   <img src="src/procreate.jpeg" class="tool">    
+                </li>
+                </ul>
+            
+           
+                <br>
+        
+                <!--
+              <a href="illustrations.html" class="skills-button">
+
+                  Read More ➝
+  
+              </a>-->
+
+          
+          </div>
+          </div>
+
+          <div class="column">
+
+            <div class="tile">
+
+           <img src = "src/ux-ui.png" class="icon">
+            <h3>Videos & Animations</h3>
+
+           <p class="desc">I'm able to animate logos and illustrations and create videos.</p>
+         
+           <ul class="tools">
+            <li>
+                <img src="src/adobe-premierpro.png" class="tool">
+             </li>
+                            
+             <li>
+                 <img src="src/adobe-aftereffects.png" class="tool">
+              </li>
+          
+                </ul>            
+        
+                <!--
+              <a href="videos-animations.html" class="skills-button">
+
+                  Read More ➝
+  
+              </a>-->
+
+          </div>
+          </div>
+
+
+
+
+      </div>
+
+  </div>
+
+  <div class="right-col">
+    <img class="right-image2" src="src/desktop.png">
+          
+  
+
+            </div>
+           
+
+
+  
+</div>
+</div>
+      <!-- Work Section -->
+      <div class="section" id="projectsSection">
+
+        <div class="page-container">
+          
+          <div class="left-col">
+
+        <div class="slide" data-anchor="intro">
+     
+          <h1><span class="dark">My</span>
+            <span class="light">Projects</span></h1>
+
+          <p>View selected favourite works where I explain my processes.</p>
+
+          <svg
+            class="swipe-left-right"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 66.61 80.86"
+          >
+            <path
+              d="M33.47,17.23A4.77,4.77,0,0,1,38.22,22V38.62a4.89,4.89,0,0,1,2.38-4.75,4.74,4.74,0,0,1,4.75,0,4.85,4.85,0,0,1,2.38,4.75v4.75a4.93,4.93,0,0,1,1.19-3.56c1.63-1.69,5.45-1.8,7.13,0,1,1,1.05,2.68,1.19,5.94,0,1,0,1.82,0,2.38a4.89,4.89,0,0,1,2.37-4.76,4.81,4.81,0,0,1,4.76,0,4.89,4.89,0,0,1,2.37,4.76V75a4.78,4.78,0,0,1,0,1.66A6,6,0,0,1,62,81.4a14.89,14.89,0,0,1-2.41,0H35.85A10.86,10.86,0,0,1,28.72,79c-2.38-2-2.57-4.21-4.76-9.51A65.31,65.31,0,0,0,19.21,60c-4.22-6.8-8.07-9-7.13-11.88a4.28,4.28,0,0,1,2.38-2.38c3.53-1.43,9.26,2.42,14.26,9.51V22A4.77,4.77,0,0,1,33.47,17.23Z"
+              transform="translate(-0.2 -0.59)"
+            />
+            <path
+              class="swipe-left-right--left"
+              d="M26.34,7.72h0a9.51,9.51,0,0,1-9.51,9.51H12.08v7.13L.2,12.48,12.08.59V7.72Z"
+              transform="translate(-0.2 -0.59)"
+            />
+            <path
+              class="swipe-left-right--right"
+              d="M50.11,17.23h4.75v7.13L66.74,12.48,54.86.59V7.72H40.6A9.51,9.51,0,0,0,50.11,17.23Z"
+              transform="translate(-0.2 -0.59)"
+            />
+          </svg>
+        </div>
+ 
+       
+        <div class="slide" data-anchor="personal-portfolio">
+          <h2>Personal Portfolio</h2>
+<br>
+          <span class="tag">Web Design</span>  <span class="tag">Web Development</span> <span class="tag">Logo Design</span> <span class="tag">Illustrations</span></p>
+
+          <p>
+            This website was built for myself to showcase my work and projects.
+          <br> <br> <br> 
+            <img
+            src="src/current-portfolio.png"
+            class="work-image"
+            alt="Home Page Screenshot"
+          />
+
+            <div class="button_container">
+              <div class="button_su">
                 
-</body>
+      <a href="current-portfolio.html"><button>View Project</button></a>
+   
+</div>
+
+
+              <div class="slide" data-anchor="the-basta-group">
+           
+                <h2>Access the Cube</h2>
+      <br>
+                <span class="tag">Wordpress</span> <span class="tag">Logo Design</span> </p>
+      
+                <p>
+                 A marketing company with a geometric theme.
+                <br> <br> <br> 
+                  <img
+                  src="src/accessthecube.png"
+                  class="work-image"
+                  alt="Home Page Screenshot"
+                />
+      
+                  <div class="button_container">
+                    <div class="button_su">
+             
+
+                  
+                          
+                <a href="access-the-cube.html"><button>View Project</button></a>
+             
+                    </div>
+
+           <div class="slide" data-anchor="the-basta-group">
+
+            <h2>The Basta Group</h2>
+            <br>
+                      <span class="tag">Wordpress</span> <span class="tag">Logo Design</span> <span class="tag">Business Card</span> </p>
+                      <p>
+                        The Basta Group is a luxurious real estate company.
+                         <br> <br> <br> </p>
+
+                         <img
+                         src="src/the-basta-group-web.png"
+                         class="work-image"
+                         alt="Home Page Screenshot"
+                       />
+                       <div class="button_container"></div>
+                        <div class="button_su"></div>
+                              
+                        <a href="the-basta-group.html"><button>View Project</button></a>
+             
+           </div>
+
+           <div class="slide" data-anchor="return-of-the-natural">
+
+            <h2>Return of the Natural</h2>
+            <br>
+                      <span class="tag">Wordpress</span> <span class="tag">Logo Design</span> </p>
+                      <p>
+                        Return of the Natural is a photography business for online dating.
+                         <br> <br> <br> </p>
+
+                         <img
+                         src="src/returnofthenatural.png"
+                         class="work-image"
+                         alt="Home Page Screenshot"
+                       />
+                       <div class="button_container"></div>
+                        <div class="button_su"></div>
+                       
+                                      
+                <a href="return-of-the-natural.html"><button>View Project</button></a>
+             
+           </div>
+
+
+                    <div class="slide" data-anchor="chip-ed">
+                  
+                      <h2>Chip Ed</h2>
+            <br>
+                      <span class="tag">Electron.js</span> <span class="tag">Web Design</span> </p>
+            
+                      <p>
+                     Chip Ed is a project I built with a team of friends and we are making a web app for students.
+                      <br> <br> <br> 
+                        <img
+                        src="src/chiped-home-light.png"
+                        class="work-image"
+                        alt="Home Page Screenshot"
+                      />
+            
+                        <div class="button_container">
+                          <div class="button_su">
+                            <span class="su_button_circle">
+                            </span>
+                            <a href="chip-ed.html"><button>View Project</button></a>
+             
+                          </div>
+
+                          
+    
+
+
+
+          </p>
+       
+  
+       
+
+   
+        </div>
+
+ 
+      
+    
+      </div>
+    
+    </div></div></div>
+
+
+
+
+    </div>
+
+    
+      </div>
+      
+<div class="right-col">
+<img class="right-image" src="src/projects-image.png">
+
+</div>
+    </div>
+   
+
+    
+  </div>
+
+
+
+    <!--Modal Elements-->
+    <div id="modalElements">
+     
+      <div class="enlarge-section">
+        <img
+          src="src/close.svg"
+          class="enlarge-close"
+          alt="Close Image Preview"
+        />
+        <img src="" class="enlarge-image" alt="Work Showcase Preview" />
+      </div>
+      </div>
+    </div>
+    <!--Menu Elements-->
+
+    <!--Page Scripts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts/typed.min.js"></script>
+    <script src="scripts/fullpage.min.js"></script>
+    <script src="scripts/float-labels.min.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </body>
 </html>
