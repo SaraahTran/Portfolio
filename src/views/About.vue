@@ -12,19 +12,20 @@
 
               <p>
                 Hello! I’m Sarah Tran. I'm a digital designer and front-end
-                developer from Melbourne, Australia. I am a student studying a Bachelor of Information Technology and Business. I am  passionate about
-                design, technology, marketing, building great user experiences and
-                constantly learning.
+                developer from Melbourne, Australia. I am a student studying a
+                Bachelor of Information Technology and Business. I am passionate
+                about design, technology, marketing, building great user
+                experiences and constantly learning.
               </p>
             </v-card-title>
           </v-card>
         </v-flex>
 
-        <v-flex xs12 sm12 md6 lg6 xl6 xs6 class="text-xs-center " 
+        <v-flex xs12 sm12 md6 lg6 xl6 xs6 class="text-xs-center"
           ><v-row align="center" justify="center">
             <v-img
               class="ml-auto text-xs-center"
-              src="/images/about-me.png"
+              src="/images/about-image.png"
               max-width="250"
             ></v-img
           ></v-row>
