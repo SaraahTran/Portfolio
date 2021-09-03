@@ -30,6 +30,10 @@
   --error-color: #ef4d4d !important;
   font-family: "Gilroy", sans-serif;
 }
+
+body{
+background: white;
+}
 </style>
 
 <script>
