@@ -137,7 +137,7 @@ export default {
             tech3: "CSS",
             tech4: "Javascript",
           },
-          poster: "../images/web/basementpro-website.png",
+          poster: "../images/web/current-portfolio.png",
           preview: "../images/web/current-portfolio.png",
         },
         {
