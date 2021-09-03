@@ -10,7 +10,7 @@
 <div class="mf-social-side-list">
   <ul>
   <li>
-   <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+   <a href="https://www.facebook.com/profile.php?id=100009191550386" target="_blank"><i class="fab fa-facebook-f"></i></a>
   </li>
 
   <li>
@@ -18,7 +18,7 @@
    </li>
             
    <li>
-  <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+  <a href="https://linkedin.com/saraahtran" target="_blank"><i class="fab fa-linkedin"></i></a>
   </li>
   
   <li>
