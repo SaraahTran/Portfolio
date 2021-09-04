@@ -60,6 +60,7 @@
 <style>
 .v-btn__content{
 letter-spacing: 2px!important;
+margin-right: 2px!important;
 }
 
 
