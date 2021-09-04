@@ -61,8 +61,12 @@
 .v-btn__content{
 letter-spacing: 2px!important;
 margin-right: 2px!important;
+
 }
 
+.v-toolbar__items{
+margin-right: 5px!important;
+}
 
 
 </style>
