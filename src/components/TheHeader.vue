@@ -65,7 +65,7 @@ margin-right: 2px!important;
 }
 
 .v-toolbar__items{
-margin-right: 5px!important;
+margin-right: 15px!important;
 }
 
 
