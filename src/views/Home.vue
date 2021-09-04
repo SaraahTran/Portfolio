@@ -66,7 +66,6 @@
     <About />
     <Skills />
     <Portfolio />
-    <Contact />
   </full-page>
 </template>
 
@@ -77,7 +76,6 @@ import VueCompareImage from "vue-compare-image";
 import About from "./About.vue";
 import Skills from "./Skills.vue";
 import Portfolio from "./Portfolio/Portfolio.vue";
-import Contact from "./Contact.vue";
 
 export default {
   metaInfo: {
@@ -100,8 +98,7 @@ export default {
     FullPage,
     About,
     Portfolio,
-    Skills,
-    Contact,
+    Skills
   },
   data() {
     return {
@@ -111,7 +108,7 @@ export default {
         click: true,
         navigation: true,
         responsiveWidth: 800,
-        anchors: ["Home", "About", "Skills", "Portfolio", "Contact"],
+        anchors: ["Home", "About", "Skills", "Portfolio"],
       },
 
       icons: [
