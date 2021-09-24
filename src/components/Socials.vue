@@ -153,11 +153,11 @@ export default {
       icons: [
         { href: "https://github.com/SaraahTran", icon: "fab fa-github" },
         {
-          href: "https://www.facebook.com",
+          href: "https://www.facebook.com/profile.php?id=100009191550386",
           icon: "fab fa-facebook-f",
         },
         {
-          href: "https://www.linkedin.com",
+          href: "https://www.linkedin.com/saraahtran",
           icon: "fab fa-linkedin",
         },
         {
