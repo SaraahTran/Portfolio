@@ -7,17 +7,17 @@
             <v-list-tile-title>HOME</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
-        <v-list-tile active-class="green--text" href="#About">
+        <v-list-tile active-class="purple--text " href="#About">
           <v-list-tile-content>
             <v-list-tile-title>ABOUT</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
-        <v-list-tile active-class="green--text" to="#Skills">
+        <v-list-tile active-class="purple--text " to="#Skills">
           <v-list-tile-content>
             <v-list-tile-title>SKILLS</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
-        <v-list-tile active-class="green--text" to="#Portfolio">
+        <v-list-tile active-class="purple--text " to="#Portfolio">
           <v-list-tile-content>
             <v-list-tile-title>PORTFOLIO</v-list-tile-title>
           </v-list-tile-content>
@@ -37,10 +37,10 @@
         <v-icon v-else>fas fa-moon</v-icon>
       </v-btn>
       <v-toolbar-items class="hidden-sm-and-down">
-        <v-btn flat to href="/" active-class="green--text headline">Home</v-btn>
-        <v-btn  flat to href="/#About" active-class="green--text headline">About</v-btn>
-        <v-btn flat to href="/#Skills" active-class="green--text headline">Skills</v-btn>
-        <v-btn flat to href="/#Portfolio" active-class="green--text headline">Portfolio</v-btn>
+        <v-btn flat to href="/" active-class="purple--text headline">Home</v-btn>
+        <v-btn  flat to href="/#About" active-class="purple--text  headline">About</v-btn>
+        <v-btn flat to href="/#Skills" active-class="purple--text  headline">Skills</v-btn>
+        <v-btn flat to href="/#Portfolio" active-class="purple--text  headline">Portfolio</v-btn>
        
         <v-btn @click="changeTheme" depressed small icon>
           <v-icon v-if="goDark==true">fas fa-sun</v-icon>

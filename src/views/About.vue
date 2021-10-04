@@ -11,8 +11,7 @@
               </h1>
 
               <p>
-                Hello! I’m Sarah Tran. I'm a digital designer and front-end
-                developer from Melbourne, Australia. I am a student studying a
+                Hello! I’m Sarah Tran. I am a student studying a
                 Bachelor of Information Technology and Business. I am passionate
                 about design, technology, marketing, building great user
                 experiences and constantly learning.
