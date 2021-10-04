@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-navigation-drawer v-model="drawer" absolute temporary app width="150" height="340">
+    <v-navigation-drawer v-model="drawer" absolute temporary app width="150" height="220">
       <v-list class="pt-4">
         <v-list-tile active-class="purple--text" link="/">
           <v-list-tile-content>
@@ -22,7 +22,6 @@
             <v-list-tile-title>PORTFOLIO</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
-       
       </v-list>
     </v-navigation-drawer>
     <v-toolbar fixed flat dense color="transparent" scroll-off-screen>
@@ -41,7 +40,6 @@
         <v-btn  flat to href="/#About" active-class="purple--text  headline">About</v-btn>
         <v-btn flat to href="/#Skills" active-class="purple--text  headline">Skills</v-btn>
         <v-btn flat to href="/#Portfolio" active-class="purple--text  headline">Portfolio</v-btn>
-       
         <v-btn @click="changeTheme" depressed small icon>
           <v-icon v-if="goDark==true">fas fa-sun</v-icon>
           <v-icon v-else>fas fa-moon</v-icon>

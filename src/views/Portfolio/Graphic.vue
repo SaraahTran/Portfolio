@@ -102,6 +102,53 @@
 
 
 
+    <v-subtitle class="pt-4 mt-4 headline">Flyer</v-subtitle>
+    <v-layout row justify-center align-center wrap class="mt-4 pt-2">
+      <v-dialog
+        v-model="flyer.dialog"
+        lazy
+        max-width="1000"
+        v-for="flyer in flyers"
+        :key="flyer.title"
+      >
+        <template v-slot:activator="{ on }">
+          <v-flex xs12 sm6 md4 lg4 xl4 v-on="on"
+            ><v-hover>
+              <v-card hover flat color="lightgrey" class="pa-3">
+                <v-img
+                  :src="flyer.poster"
+                  :alt="flyer.title"
+                  height="230"
+                  lazy-src="https://cdn.dribbble.com/users/26878/screenshots/3544693/07-loader.gif"
+                ></v-img>
+                <v-card-title
+                  primary-title
+                  class="justify-center font-weight-bold"
+                  >{{ flyer.title }}</v-card-title
+                >
+                <v-card-subtitle class="text-center"
+                  ><p class="text-center">
+                    {{ flyer.subtitle }}
+                  </p></v-card-subtitle
+                >
+              </v-card></v-hover
+            >
+          </v-flex>
+        </template>
+        <v-card class="pa-4" v-if="flyer.dialog">
+          <v-img :src="flyer.poster"></v-img>
+          <v-card-text>
+            <!--Description insert (for future)-->
+          </v-card-text>
+        </v-card>
+      </v-dialog>
+    </v-layout>
+
+
+
+
+
+
 
   </v-container>
 </template>
@@ -166,6 +213,11 @@ export default {
           title: "Dream Cream",
           poster: "../images/graphic/dreamcream-logo.png",
         },
+         {
+          dialog: false,
+          title: "Industry Lessons",
+          poster: "../images/graphic/industrylessons-logo.png",
+        },
         
       ],
       cards: [
@@ -175,10 +227,17 @@ export default {
           poster: "../images/graphic/tbg-businesscard.png",
         },
       ],
-      
+         flyers: [
+        {
+          dialog: false,
+          title: "Heartwell Dental",
+          poster: "../images/graphic/heartwell-dental-flyer.png",
+        },
+      ],
       
       
     };
+    
     
   },
 };
